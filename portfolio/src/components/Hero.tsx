@@ -1,7 +1,10 @@
 import { ArrowRight, Github, Linkedin, Mail, FileText } from "lucide-react";
 import { Button } from "./ui/button";
+import { useNavigate } from "react-router";
 
-export function Home() {
+export function Hero() {
+  const navigate = useNavigate();
+
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -15,7 +18,7 @@ export function Home() {
         <div className="max-w-4xl mx-auto text-center">
           
           <div className="mb-8 flex justify-center"> 
-            <div className="relative w-64 h-64 md:w-60 md:h-60 rounded-full overflow-hidden border-3 border-white shadow-xl">
+            <div className="relative w-64 h-64 md:w-60 md:h-60 rounded-full overflow-hidden border-3 border-white shadow-xl select-none">
               <img 
                 src="./public/images/profile.jpg"
                 alt="Lucas Kim Profile"
@@ -27,7 +30,7 @@ export function Home() {
           <h1 className="text-5xl md:text-7xl font-bold mb-5 select-none">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Lucas Kim
+              Lucas Kim!
             </span>
           </h1>
           
@@ -36,12 +39,19 @@ export function Home() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button 
+            {/* <Button 
               onClick={() => scrollToSection("projects")}
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 cursor-pointer select-none" 
             >
               View My Work <ArrowRight className="ml-2" size={20} />
+            </Button> */}
+            <Button 
+              onClick={() => navigate("/my-story")}
+              size="lg" 
+              className="bg-blue-600 hover:bg-blue-700 text-white px-8 cursor-pointer select-none"
+            >
+              More About Me <ArrowRight className="ml-2" size={20} />
             </Button>
             <Button 
               size="lg" 

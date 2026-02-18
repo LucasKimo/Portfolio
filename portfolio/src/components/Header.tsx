@@ -1,16 +1,35 @@
 import { Menu, X, FileText } from "lucide-react";
 import { useState } from "react";
 import { Button } from "./ui/button";
+import { useNavigate, useLocation } from "react-router";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const isHome = location.pathname === "/";
 
   const scrollToSection = (sectionId: string) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      setIsMenuOpen(false);
+    // const element = document.getElementById(sectionId);
+    // if (element) {
+    //   element.scrollIntoView({ behavior: "smooth" });
+    //   setIsMenuOpen(false);
+    // }
+    if (!isHome) {
+      navigate("/");
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100);
+    } else {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
+    setIsMenuOpen(false);
   };
 
   return (

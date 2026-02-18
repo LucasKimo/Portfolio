@@ -1,4 +1,4 @@
-import { Code, Palette, Rocket } from "lucide-react";
+import { Code, Palette, Rocket, Briefcase, Trophy, GraduationCap } from "lucide-react";
 import { Card } from "./ui/card";
 
 export function About() {
@@ -17,6 +17,37 @@ export function About() {
       icon: Rocket,
       title: "Fast Delivery",
       description: "Delivering high-quality projects on time and within scope",
+    },
+  ];
+
+  const careerJourney = [
+    {
+      year: "July, 2023",
+      title: "Diploma in Information Technology",
+      company: "Queensland University of Technology",
+      description: "Started my career building responsive web applications and learning from experienced developers.",
+      icon: GraduationCap,
+    },
+    {
+      year: "2021",
+      title: "Full Stack Developer",
+      company: "Digital Solutions Co.",
+      description: "Expanded my skillset to full-stack development, working on complex enterprise applications.",
+      icon: Briefcase,
+    },
+    {
+      year: "2023",
+      title: "Senior Developer",
+      company: "Innovation Labs",
+      description: "Led development teams and architected scalable solutions for high-traffic applications.",
+      icon: Trophy,
+    },
+    {
+      year: "2026",
+      title: "Lead Developer",
+      company: "Future Tech",
+      description: "Currently leading cross-functional teams and mentoring junior developers while driving technical excellence.",
+      icon: Briefcase,
     },
   ];
 
@@ -69,6 +100,53 @@ export function About() {
                 <p className="text-gray-600">{highlight.description}</p>
               </Card>
             ))}
+          </div>
+
+          {/* Career Journey Section */}
+          <div className="mt-20">
+            <div className="text-center mb-16">
+              <h3 className="text-3xl font-bold mb-4">Career Journey</h3>
+              <p className="text-xl text-gray-600">My professional growth over the years</p>
+            </div>
+
+            <div className="relative">
+              {/* Timeline */}
+              <div className="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-blue-200"></div>
+
+              <div className="space-y-12 md:space-y-0"> 
+                {careerJourney.map((step, index) => (
+                  <div
+                    key={index}
+                    className={`flex flex-col md:flex-row items-center ${
+                      index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    } ${index !== 0 ? "md:-mt-10" : ""}`}
+                  >
+
+                    <div className="w-full md:w-5/12 z-10">
+                      <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
+                        <div className="flex items-start gap-4">
+                          <div className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                            <step.icon size={24} />
+                          </div>
+                          <div className="flex-1">
+                            <div className="text-blue-600 font-bold mb-1">{step.year}</div>
+                            <h4 className="text-xl font-bold mb-1">{step.title}</h4>
+                            <p className="text-gray-500 text-sm mb-2">{step.company}</p>
+                            <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
+                          </div>
+                        </div>
+                      </Card>
+                    </div>
+
+                    {/* Center Point */}
+                    <div className="hidden md:flex w-2/12 justify-center z-20">
+                      <div className="w-4 h-4 bg-blue-600 rounded-full border-4 border-white shadow-lg"></div>
+                    </div>
+                    <div className="hidden md:block w-5/12"></div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>
