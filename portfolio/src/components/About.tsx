@@ -22,32 +22,32 @@ export function About() {
 
   const careerJourney = [
     {
-      year: "July, 2023",
+      year: "Jul, 2023 - Feb, 2024",
       title: "Diploma in Information Technology",
       company: "Queensland University of Technology",
       description: "Started my career building responsive web applications and learning from experienced developers.",
       icon: GraduationCap,
     },
     {
-      year: "2021",
-      title: "Full Stack Developer",
-      company: "Digital Solutions Co.",
+      year: "Feb, 2024",
+      title: "Bachelor of Information Technology (Computer Science)",
+      company: "Queensland University of Technology",
       description: "Expanded my skillset to full-stack development, working on complex enterprise applications.",
-      icon: Briefcase,
+      icon: GraduationCap,
     },
     {
-      year: "2023",
-      title: "Senior Developer",
-      company: "Innovation Labs",
+      year: "Jul, 2024",
+      title: "Executive Deans' Commendation of Academic Excellence",
+      company: "Queensland University of Technology",
       description: "Led development teams and architected scalable solutions for high-traffic applications.",
       icon: Trophy,
     },
     {
-      year: "2026",
-      title: "Lead Developer",
-      company: "Future Tech",
+      year: "Aug, 2025",
+      title: "Hackathon Winner - Code Network Winter Hackathon 2025",
+      company: "Code Network (QUT)",
       description: "Currently leading cross-functional teams and mentoring junior developers while driving technical excellence.",
-      icon: Briefcase,
+      icon: Trophy,
     },
   ];
 
@@ -58,7 +58,7 @@ export function About() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              I'm a passionate developer with 5+ years of experience building web and mobile applications
+              Winner of the 2025 Code Network Winter Hackathon & QUT Computer Science graduate with a proven track record of leading teams to build scalable, AI-driven solutions.
             </p>
           </div>
 

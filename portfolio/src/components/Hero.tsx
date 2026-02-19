@@ -34,8 +34,8 @@ export function Hero() {
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-600 mb-5 max-w-2xl mx-auto select-none">
-            Full Stack Developer & UI/UX Designer crafting beautiful digital experiences
+          <p className="text-xl md:text-2xl text-gray-600 mb-5 max-w-2xl mx-auto">
+            Recent Computer Science Graduate & Full Stack Developer building AI-driven solutions and scalable cloud architectures
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
