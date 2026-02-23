@@ -1,4 +1,4 @@
-import { Code, Palette, Rocket, Briefcase, Trophy, GraduationCap } from "lucide-react";
+import { Code, Palette, Rocket, Briefcase, Trophy, GraduationCap, FolderCode } from "lucide-react";
 import { Card } from "./ui/card";
 
 export function About() {
@@ -44,10 +44,17 @@ export function About() {
     },
     {
       year: "Aug, 2025",
-      title: "Hackathon Winner - Code Network Winter Hackathon 2025",
+      title: "Hackathon Winner - 2025 Code Network Winter Hackathon",
       company: "Code Network (QUT)",
       description: "Currently leading cross-functional teams and mentoring junior developers while driving technical excellence.",
       icon: Trophy,
+    },
+    {
+      year: "Nov, 2025",
+      title: "Team Member - Tanda & Claude AI Hackathon",
+      company: "Tanda",
+      description: "Currently leading cross-functional teams and mentoring junior developers while driving technical excellence.",
+      icon: FolderCode,
     },
   ];
 
@@ -58,7 +65,8 @@ export function About() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Winner of the 2025 Code Network Winter Hackathon & QUT Computer Science graduate with a proven track record of leading teams to build scalable, AI-driven solutions.
+              Winner of the 2025 Code Network Winter Hackathon & QUT Computer Science graduate with a 
+              proven track record of leading teams to build scalable, AI-driven solutions.
             </p>
           </div>
 
@@ -66,31 +74,49 @@ export function About() {
             <div>
               <h3 className="text-2xl font-bold mb-4">My Story</h3>
               <p className="text-gray-600 mb-4">
-                I started my journey in web development during college and quickly fell in love with creating 
-                digital experiences that solve real-world problems. Over the years, I've worked with startups 
-                and established companies, helping them bring their ideas to life.
+                My journey in Computer Science began in high school when I enrolled in a C language course at 
+                an IT academy during my vacation. Driven by a desire to dive deeper into the field under the guidance of experts,
+                 I moved to Brisbane, Australia, to begin my academic journey.
+              </p>
+              <p className="text-gray-600 mb-4">
+                I soon fell in love with IT as I realized that Computer Science is far more than just web development or 
+                'blocks of code.' It is a vast ecosystem encompassing AI, Cloud Computing, Data Management, and Security. 
+                Throughout my studies, I have built a solid foundation in <span className="text-gray-800 font-semibold">programming, networking,</span> and <span className="text-gray-800 font-semibold">Machine Learning, </span> 
+                while mastering the art of collaborating with teammates to bring complex projects to life.
               </p>
               <p className="text-gray-600">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                projects, or sharing knowledge with the developer community through blog posts and talks.
+                Beyond the classroom, I have actively challenged myself through <span className="text-gray-800 font-semibold">hackathons</span>. A defining moment in my career 
+                was <span className="text-gray-800 font-semibold">winning first place at the 2025 Code Network Winter Hackathon</span>. This achievement is particularly meaningful 
+                as it was my very first hackathon, where I had the opportunity to lead a team of four. Through this experience, 
+                I honed my skills in <span className="text-gray-800 font-semibold">brainstorming, reconciling different perspectives, 
+                troubleshooting technical issues, </span>and <span className="text-gray-800 font-semibold">effectively 
+                presenting </span>a final product to judges and the public.
               </p>
             </div>
 
             <div>
               <h3 className="text-2xl font-bold mb-4">What I Do</h3>
               <p className="text-gray-600 mb-4">
-                I specialize in building full-stack applications using modern technologies like React, 
-                Node.js, and TypeScript. My focus is on creating performant, accessible, and user-friendly 
-                applications that delight users.
+                I specialize in building <span className="text-gray-800 font-semibold">robust full-stack applications</span> using 
+                <span className="text-gray-800 font-semibold"> React, Node.js,</span> and <span className="text-gray-800 font-semibold">TypeScript</span>. 
+                My focus is on delivering <span className="text-gray-800 font-semibold">performant, accessible, and innovative</span> solutions 
+                that not only meet technical standards but also <span className="text-gray-800 font-semibold">surprise and delight users</span> through intuitive design.
+              </p>
+              <p className="text-gray-600 mb-4">
+                I am passionate about managing and analyzing complex datasets using <span className="text-gray-800 font-semibold">SQL</span> and 
+                various <span className="text-gray-800 font-semibold">data visualization libraries</span>. I strive to turn raw data into actionable 
+                insights that <span className="text-gray-800 font-semibold">drive informed decision-making.</span>
               </p>
               <p className="text-gray-600">
-                I'm also passionate about design systems, component architecture, and creating seamless 
-                developer experiences through well-documented and reusable code.
+                I have a keen interest in leveraging <span className="text-gray-800 font-semibold">Machine Learning models 
+                to provide predictive solutions</span>. My goal is to apply these technologies to 
+                <span className="text-gray-800 font-semibold"> solve real-world challenges</span> for both <span className="text-gray-800 font-semibold"> businesses </span> 
+                and <span className="text-gray-800 font-semibold"> professional sports teams </span>and <span className="text-gray-800 font-semibold"> athletes</span>, optimizing performance through <span className="text-gray-800 font-semibold">data-driven strategies.</span>
               </p>
             </div>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {highlights.map((highlight, index) => (
               <Card key={index} className="p-6 hover:shadow-lg transition-shadow">
                 <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
@@ -100,7 +126,7 @@ export function About() {
                 <p className="text-gray-600">{highlight.description}</p>
               </Card>
             ))}
-          </div>
+          </div> */}
 
           {/* Career Journey Section */}
           <div className="mt-20">
@@ -131,7 +157,12 @@ export function About() {
                           <div className="flex-1">
                             <div className="text-blue-600 font-bold mb-1">{step.year}</div>
                             <h4 className="text-xl font-bold mb-1">{step.title}</h4>
-                            <p className="text-gray-500 text-sm mb-2">{step.company}</p>
+                            {/* <p className="text-gray-800 text-sm mb-2">{step.company}</p> */}
+                            <div className="mb-2">
+                              <span className="bg-blue-50 text-blue-700 text-xs font-bold px-1 py-1 rounded-md">
+                                {step.company}
+                              </span>
+                            </div>
                             <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
                           </div>
                         </div>
