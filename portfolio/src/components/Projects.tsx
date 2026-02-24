@@ -6,27 +6,26 @@ import { Button } from "./ui/button";
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-featured online store with payment integration, inventory management, and admin dashboard",
-      // public/projects/shop.jpg 에 이미지가 있다고 가정할 때의 경로입니다.
-      image: "/projects/shop.jpg", 
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "Future Scope",
+      description: "An AI-powered platform that provides personalized career guidance and skill development resources for users",
+      image: "./public/images/FutureScope.png", 
+      tags: ["React", "Node.js", "OpenAI API", "Stripe"],
       github: "https://github.com",
       demo: "https://example.com",
     },
     {
-      title: "Task Management App",
+      title: "BRKR",
       description: "Collaborative project management tool with real-time updates and team collaboration features",
-      image: "/projects/task.jpg",
-      tags: ["React", "TypeScript", "Firebase", "Tailwind"],
+      image: "./public/images/BRKR.png",
+      tags: ["React", "TypeScript", "Tailwind", "Vercel"],
       github: "https://github.com",
       demo: "https://example.com",
     },
     {
-      title: "Design Portfolio",
+      title: "Planary",
       description: "A stunning portfolio website showcasing creative work with smooth animations and transitions",
       image: "/projects/portfolio.jpg",
-      tags: ["Next.js", "Framer Motion", "Tailwind", "Vercel"],
+      tags: ["React Native", "Framer Motion", "Tailwind", "Vercel"],
       github: "https://github.com",
       demo: "https://example.com",
     },
@@ -46,12 +45,10 @@ export function Projects() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <Card key={index} className="overflow-hidden hover:shadow-xl transition-shadow group">
-                {/* 배경색(bg-gray-200)을 유지하여 이미지가 로드되기 전에도 영역을 확보합니다 */}
                 <div className="relative h-48 overflow-hidden bg-gray-200">
                   <img
                     src={project.image}
                     alt={project.title}
-                    // className은 기존과 동일하게 유지하여 호버 효과를 살립니다
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                 </div>
