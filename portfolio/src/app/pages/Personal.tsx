@@ -101,8 +101,8 @@ export default function Personal() {
         <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Ok so who am I...?
+              <h1 className="text-5xl md:text-5xl font-bold mb-6">
+                Who is Lucas Kim?
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 A peek into who I am, what drives me, and how I spend my time when I'm not building applications
