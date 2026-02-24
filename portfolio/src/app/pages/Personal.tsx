@@ -1,7 +1,6 @@
-import { ArrowLeft, Heart, Coffee, Camera, Music, Book, Plane, Code } from "lucide-react";
+import { ArrowLeft, TentTree, Medal, Music, Youtube, Plane, Code } from "lucide-react";
 import { Button } from "../../components/ui/button";
 import { Card } from "../../components/ui/card";
-import { Badge } from "../../components/ui/badge";
 import { useNavigate } from "react-router";
 
 export default function Personal() {
@@ -9,13 +8,13 @@ export default function Personal() {
 
   const personality = [
     {
-      icon: Heart,
-      title: "Empathetic",
+      icon: TentTree,
+      title: "Explorer",
       description: "I believe in building technology that truly understands and serves people's needs",
     },
     {
-      icon: Coffee,
-      title: "Coffee Enthusiast",
+      icon: Medal,
+      title: "Sports Enthusiast",
       description: "My code runs on coffee and curiosity. Always exploring the perfect brew",
     },
     {
@@ -27,8 +26,8 @@ export default function Personal() {
 
   const hobbies = [
     {
-      icon: Camera,
-      title: "Photography",
+      icon: Medal,
+      title: "Competitive Sports",
       description: "Capturing moments and telling stories through the lens. Street and landscape photography are my favorites.",
     },
     {
@@ -37,8 +36,8 @@ export default function Personal() {
       description: "Creating electronic music in my spare time. It's coding but with sound waves!",
     },
     {
-      icon: Book,
-      title: "Reading",
+      icon: Youtube,
+      title: "Vlog Creation",
       description: "From sci-fi novels to tech blogs, I'm always learning something new.",
     },
     {
@@ -97,14 +96,13 @@ export default function Personal() {
         </nav>
       </header>
 
-      <main className="pt-20">
+      <main className="pt-16">
         {/* Hero Section */}
         <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
-              <Badge className="mb-6 bg-blue-600 text-white">About Me</Badge>
               <h1 className="text-5xl md:text-6xl font-bold mb-6">
-                Beyond the Code
+                Ok so who am I...?
               </h1>
               <p className="text-xl text-gray-600 max-w-2xl mx-auto">
                 A peek into who I am, what drives me, and how I spend my time when I'm not building applications
@@ -118,7 +116,7 @@ export default function Personal() {
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold mb-4">My Personality</h2>
+                <h2 className="text-4xl font-bold mb-3">My Personality</h2>
                 <p className="text-xl text-gray-600">
                   The values and traits that shape how I work and interact
                 </p>
