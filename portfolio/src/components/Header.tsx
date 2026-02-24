@@ -58,7 +58,7 @@ export function Header() {
               Skills
             </button>
             <Button variant="outline" asChild className="gap-2">
-              <a href="/path-to-your-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="./public/documents/LucasKim_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText size={16} />
                 CV
               </a>
@@ -94,7 +94,7 @@ export function Header() {
               Skills
             </button>
             <Button variant="outline" asChild className="w-full gap-2">
-              <a href="/path-to-your-cv.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="./public/documents/LucasKim_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText size={16} />
                 View CV
               </a>

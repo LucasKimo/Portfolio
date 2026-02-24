@@ -46,7 +46,7 @@ export function About() {
       year: "Aug, 2025",
       title: "Hackathon Winner - 2025 Code Network Winter Hackathon",
       company: "Code Network (QUT)",
-      description: "Built an interactive AI-powered roadmap generator 'Future Scope'. Led a team of four to win first place at the 2025 Code Network Winter Hackathon.",
+      description: "Built an interactive AI-powered roadmap generator 'Future Scope'. Won first place at the 2025 Code Network Winter Hackathon.",
       icon: Trophy,
     },
     {
