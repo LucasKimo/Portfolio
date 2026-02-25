@@ -22,46 +22,48 @@ export function About() {
 
   const careerJourney = [
     {
+      icon: GraduationCap,
       year: "Jul, 2023 - Feb, 2024",
       title: "Diploma in Information Technology",
       company: "Queensland University of Technology",
-      description: "Started my formal IT education at QUT, covering core technical principles.",
-      icon: GraduationCap,
+      description: "Started my formal IT education at QUT, covering core technical principles."
     },
     {
+      icon: GraduationCap,
       year: "Feb, 2024",
       title: "Bachelor of Information Technology (Computer Science)",
       company: "Queensland University of Technology",
-      description: "Advanced my academic journey by majoring in Computer Science and deepening technical expertise.",
-      icon: GraduationCap,
+      description: "Advanced my academic journey by majoring in Computer Science and deepening technical expertise."
     },
     {
+      icon: Trophy,
       year: "Jul, 2024",
       title: "Executive Deans' Commendation of Academic Excellence",
       company: "Queensland University of Technology",
-      description: "Awarded for achieving a GPA of 6.75 in the Bachelor of Information Technology.",
-      icon: Trophy,
+      description: "Awarded for achieving a GPA of 6.75 in the Bachelor of Information Technology."
     },
     {
+      icon: Trophy,
       year: "Aug, 2025",
       title: "Hackathon Winner - 2025 Code Network Winter Hackathon",
       company: "Code Network (QUT)",
       description: "Built an interactive AI-powered roadmap generator 'Future Scope'. Led a team of four to win first place at the 2025 Code Network Winter Hackathon.",
-      icon: Trophy,
+      url: "https://www.qut.edu.au/about/faculty-of-science/insights/hacking-ambition-into-action-code-networks-2025-winter-hackathon"
     },
     {
+      icon: FolderCode,
       year: "Nov, 2025",
       title: "Team Member - Tanda & Claude AI Hackathon",
       company: "Tanda",
-      description: "Developed 'BRKR', a Tinder-style networking tool derived from Ice Breaker.",
-      icon: FolderCode,
+      description: "Developed 'BRKR', a Tinder-style networking tool derived from Ice Breaker."
     },
     {
+      icon: GraduationCap,
       year: "Dec, 2025",
       title: "Graduate (Bachelor of Information Technology)",
       company: "Queensland University of Technology",
       description: "Completed a Bachelor of Information Technology (Computer Science) at QUT.",
-      icon: GraduationCap,
+      
     },
   ];
 
@@ -177,7 +179,7 @@ export function About() {
                           <div className="flex-1">
                             <div className="text-blue-600 font-bold mb-1">{step.year}</div>
                             <h4 className="text-xl font-bold mb-1">{step.title}</h4>
-                            {/* <p className="text-gray-800 text-sm mb-2">{step.company}</p> */}
+                            
                             <div className="mb-2">
                               <span className="bg-blue-50 text-blue-700 text-xs font-bold px-1 py-1 rounded-md">
                                 {step.company}
@@ -187,6 +189,26 @@ export function About() {
                           </div>
                         </div>
                       </Card>
+                      {/* <a href={step.url} target="_blank" rel="noopener noreferrer" className="block cursor-pointer">
+                        <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-white">
+                          <div className="flex items-start gap-4">
+                            <div className="w-12 h-12 bg-blue-600 text-white rounded-lg flex items-center justify-center flex-shrink-0">
+                              <step.icon size={24} />
+                            </div>
+                            <div className="flex-1">
+                              <div className="text-blue-600 font-bold mb-1">{step.year}</div>
+                              
+                              <h4 className="text-xl font-bold mb-1 group-hover:underline">{step.title}</h4>
+                              <div className="mb-2">
+                                <span className="bg-blue-50 text-blue-700 text-xs font-bold px-1 py-1 rounded-md">
+                                  {step.company}
+                                </span>
+                              </div>
+                              <p className="text-gray-600 text-sm leading-relaxed">{step.description}</p>
+                            </div>
+                          </div>
+                        </Card>
+                      </a> */}
                     </div>
 
                     {/* Center Point */}
