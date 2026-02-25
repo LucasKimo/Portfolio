@@ -57,14 +57,14 @@ export function Header() {
             <button onClick={() => scrollToSection("skills")} className="hover:text-blue-600 hover:scale-110 transition-transform duration-200 cursor-pointer select-none">
               Skills
             </button>
-            <Button variant="outline" asChild className="gap-2">
+            <button onClick={() => scrollToSection("contact")} className="hover:text-blue-600 hover:scale-110 transition-transform duration-200 cursor-pointer select-none">
+              Contact
+            </button>
+            <Button variant="outline" asChild className="gap-2 select-none">
               <a href="./public/documents/LucasKim_Resume.pdf" target="_blank" rel="noopener noreferrer">
                 <FileText size={16} />
                 CV
               </a>
-            </Button>
-            <Button onClick={() => scrollToSection("contact")} className="bg-blue-600 hover:bg-blue-700 cursor-pointer">
-              Contact
             </Button>
           </div>
 

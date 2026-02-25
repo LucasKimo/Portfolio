@@ -9,8 +9,8 @@ export function Projects() {
       title: "Future Scope",
       description: "An AI-powered platform that provides personalized career guidance and skill development resources for users",
       image: "./public/images/FutureScope.png", 
-      tags: ["React", "Node.js", "OpenAI API", "Stripe"],
-      github: "https://github.com",
+      tags: ["React", "Node.js", "JavaScript","OpenAI API"],
+      github: "https://github.com/LucasKimo/FutureScope_Private",
       demo: "https://example.com",
     },
     {
