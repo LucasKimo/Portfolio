@@ -40,7 +40,7 @@ export function Hero() {
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button 
-              onClick={() => navigate("/my-story")}
+              onClick={() => navigate("/personal")}
               size="lg" 
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 cursor-pointer select-none"
             >

@@ -9,11 +9,11 @@ export function Skills() {
     },
     {
       title: "Backend",
-      skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB", "GraphQL", "REST APIs"],
+      skills: ["Node.js", "Express", "Python", "Django", "PostgreSQL", "MySQL", "SQLite", "REST APIs"],
     },
     {
       title: "Tools & Others",
-      skills: ["Git", "Docker", "AWS", "Figma", "Jest", "CI/CD", "Webpack", "Linux"],
+      skills: ["Git", "Docker", "AWS", "Figma", "Machine Learning", "CI/CD", "Webpack", "Linux"],
     },
   ];
 
@@ -34,9 +34,9 @@ export function Skills() {
                 <h3 className="text-2xl font-bold mb-6 text-center">{category.title}</h3>
                 <div className="flex flex-wrap gap-2 justify-center">
                   {category.skills.map((skill, skillIndex) => (
-                    <Badge 
-                      key={skillIndex} 
-                      variant="secondary" 
+                    <Badge
+                      key={skillIndex}
+                      variant="secondary"
                       className="text-sm py-2 px-4 hover:bg-blue-600 hover:text-white transition-colors cursor-default"
                     >
                       {skill}

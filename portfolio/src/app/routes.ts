@@ -7,7 +7,7 @@ export const router = createBrowserRouter([
     Component: Home,
   },
   {
-    path: "/my-story",
+    path: "/personal",
     Component: PersonalStory,
   },
 ]);

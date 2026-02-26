@@ -10,11 +10,6 @@ export function Header() {
   const isHome = location.pathname === "/";
 
   const scrollToSection = (sectionId: string) => {
-    // const element = document.getElementById(sectionId);
-    // if (element) {
-    //   element.scrollIntoView({ behavior: "smooth" });
-    //   setIsMenuOpen(false);
-    // }
     if (!isHome) {
       navigate("/");
       setTimeout(() => {
