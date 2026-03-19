@@ -16,38 +16,27 @@ export function Hero() {
     <section id="home" className="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4 py-20">
         <div className="max-w-4xl mx-auto text-center">
-          
-          <div className="mb-8 flex justify-center"> 
-            <div className="relative w-64 h-64 md:w-60 md:h-60 rounded-full overflow-hidden border-3 border-white shadow-xl select-none">
-              <img 
-                src="./public/images/profile.jpg"
-                alt="Lucas Kim Profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          
           <h1 className="text-5xl md:text-7xl font-bold mb-5 select-none">
             Hi, I'm{" "}
             <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
               Lucas Kim!
             </span>
           </h1>
-          
+
           <p className="text-xl md:text-2xl text-gray-600 mb-5 max-w-2xl mx-auto">
             Recent Computer Science Graduate & Full Stack Developer building AI-driven solutions and scalable cloud architectures
           </p>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
-            <Button 
+            <Button
               onClick={() => navigate("/personal")}
-              size="lg" 
+              size="lg"
               className="bg-blue-600 hover:bg-blue-700 text-white px-8 cursor-pointer select-none"
             >
               More About Me <ArrowRight className="ml-2" size={20} />
             </Button>
-            <Button 
-              size="lg" 
+            <Button
+              size="lg"
               variant="outline"
               className="px-8 gap-2"
               asChild
@@ -57,9 +46,9 @@ export function Hero() {
                 View CV
               </a>
             </Button>
-            <Button 
+            <Button
               onClick={() => scrollToSection("contact")}
-              size="lg" 
+              size="lg"
               variant="outline"
               className="px-8 cursor-pointer select-none"
             >
@@ -68,25 +57,25 @@ export function Hero() {
           </div>
 
           <div className="flex items-center justify-center gap-6">
-            <a 
-              href="https://github.com/LucasKimo" 
-              target="_blank" 
+            <a
+              href="https://github.com/LucasKimo"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"
               aria-label="GitHub"
             >
               <Github size={24} />
             </a>
-            <a 
-              href="https://www.linkedin.com/in/lucas-eunsu-kim/" 
-              target="_blank" 
+            <a
+              href="https://www.linkedin.com/in/lucas-eunsu-kim/"
+              target="_blank"
               rel="noopener noreferrer"
               className="text-gray-600 hover:text-blue-600 transition-colors"
               aria-label="LinkedIn"
             >
               <Linkedin size={24} />
             </a>
-            <a 
+            <a
               href="mailto:eunsukim1180@gmail.com"
               className="text-gray-600 hover:text-blue-600 transition-colors"
               aria-label="Email"
